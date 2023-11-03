@@ -1,0 +1,9 @@
+class Solution:
+    def minPartitions(self, n: str) -> int:
+        max_digit = 0
+
+        # Iterate through the digits in n to find the maximum digit
+        for digit in n:
+            max_digit = max(max_digit, int(digit))
+
+        return max_digit
